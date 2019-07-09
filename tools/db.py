@@ -26,8 +26,8 @@ class RedisClient(object):
     def get_all(self):
 
         data={
-            'app':self.db.scard(APP_KEY),
-            'pc':self.db.scard(PC_KEY),
+            'pc类': self.db.scard(PC_KEY),
+            'app类':self.db.scard(APP_KEY),
         }
 
         return data
